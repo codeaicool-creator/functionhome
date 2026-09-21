@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        hello
+    </h1>
+    <script>
+        function totalamount(price, quantity) {
+            let subtotal = price * quantity;
+            let tax = subtotal * 18 / 100;
+            return subtotal + tax;
+        }
+        let price = prompt("enter your price");
+        let quantity = prompt("enter your quantity");
+
+        let total = totalamount(price, quantity);
+        console.log("total");
+        alert("your total amount is " + total)
+    </script>
+
+</body>
+
+</html>
